@@ -2,6 +2,19 @@
 
 A Go application that fetches hotel data from multiple supplier APIs, merges and cleans the data, and serves it through a RESTful API.
 
+## 🏗️ Design Logic
+
+**Core Architecture:**
+1. **Data Ingestion**: Cron job pulls data from supplier URLs at regular intervals
+2. **Preprocessing**: Clean, merge, and normalize hotel data from multiple sources
+3. **Storage**: Store processed data in Redis for fast access
+4. **API Layer**: Expose RESTful APIs to query the Redis-stored data
+
+**Data Flow:**
+```
+Supplier URLs → Cron Job → Data Processing → Redis Storage → API Queries
+```
+
 ## 🚀 Quick Start
 
 ### Prerequisites
