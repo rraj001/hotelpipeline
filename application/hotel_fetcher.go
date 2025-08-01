@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"hotelsdatapipeline/config/domain"
+	"hotelsdatapipeline/domain"
 )
 
 type HotelFetcher struct {
