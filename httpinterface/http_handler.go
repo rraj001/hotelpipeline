@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"hotelsdatapipeline/config/domain"
+	"hotelsdatapipeline/domain"
 
 	"github.com/gorilla/mux"
 )

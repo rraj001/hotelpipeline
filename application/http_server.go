@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"hotelsdatapipeline/config/domain"
+	"hotelsdatapipeline/domain"
 	"hotelsdatapipeline/httpinterface"
 )
 

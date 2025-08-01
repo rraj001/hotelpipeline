@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 
-	"hotelsdatapipeline/config/domain"
+	"hotelsdatapipeline/domain"
 
 	"github.com/go-redis/redis/v8"
 )

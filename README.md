@@ -7,6 +7,7 @@ A Go application that fetches hotel data from multiple supplier APIs, merges and
 ### Prerequisites
 - Go 1.18 or higher
 - Redis server running locally
+- **HTTP port 8085 must be free** (or change in config)
 
 ### Installation & Run
 ```bash
@@ -15,6 +16,9 @@ go mod tidy
 
 # Start Redis (if not running)
 redis-server
+
+# Ensure port 8085 is free
+lsof -ti:8085 | xargs kill -9 2>/dev/null || true
 
 # Run the application
 go run main.go
