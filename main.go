@@ -2,7 +2,7 @@ package main
 
 import (
 	"hotelsdatapipeline/application"
-	"hotelsdatapipeline/config/infra"
+	"hotelsdatapipeline/infra"
 	"log"
 	"os"
 	"os/signal"
